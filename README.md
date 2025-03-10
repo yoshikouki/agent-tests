@@ -51,6 +51,25 @@ The resulting applications will be evaluated based on:
 
 No human changes will be made during the experiment process (except for the initial boilerplate and `.cursor/rules` configuration).
 
+## Standardized Prompts
+
+To ensure consistency across experiments, the following standardized prompts will be used with the Cursor Agent:
+
+### 1. Initial Development Prompt
+```
+Please implement the social media application according to the requirements in the README.md. Follow the technology stack and requirements exactly as specified. As you work, please explain your approach and implementation decisions. Create the necessary files and implement the core functionality systematically.
+```
+
+### 2. Chat Reset Prompt
+```
+The conversation window has become too long. Let's continue the development of the social media application. Please review what you've completed so far, identify what still needs to be implemented according to the README.md requirements, and continue from where you left off.
+```
+
+### 3. Completion Check Prompt
+```
+Have all the requirements in README.md been fulfilled? Please review the implementation against each requirement listed in the README.md and answer with Yes/No only.
+```
+
 ## Results
 
 Results and analysis will be documented as the experiments progress.
