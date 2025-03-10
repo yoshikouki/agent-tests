@@ -125,5 +125,11 @@ export async function registerUser(
 	};
 }
 
+// Create a NextAuth instance with our config
+const nextAuth = NextAuth(authConfig);
+
 // Export the auth function for use in API routes
-export const { auth, handlers, signIn, signOut } = NextAuth(authConfig);
+export const auth = nextAuth.auth;
+export const signIn = nextAuth.signIn;
+export const signOut = nextAuth.signOut;
+export const handlers = nextAuth.handlers;
