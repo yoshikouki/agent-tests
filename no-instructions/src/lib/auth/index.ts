@@ -7,6 +7,10 @@ import { z } from "zod";
 import NextAuth from "next-auth";
 
 export const authConfig: NextAuthConfig = {
+	// Add a secret key for NextAuth
+	secret:
+		process.env.NEXTAUTH_SECRET ||
+		"THIS_IS_A_SECRET_KEY_CHANGE_IT_IN_PRODUCTION",
 	pages: {
 		signIn: "/signin",
 		// Next-auth doesn't have a built-in signUp page option
