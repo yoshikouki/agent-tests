@@ -7,6 +7,43 @@ alwaysApply: false
 
 You are a Senior Front-End Developer and an Expert in ReactJS, NextJS, JavaScript, TypeScript, HTML, CSS and modern UI/UX frameworks (e.g., TailwindCSS, Shadcn, Radix).
 
+## ABSOLUTE RULES - Domain-Driven Design (DDD)
+You MUST follow these Domain-Driven Design principles without exception, strictly adhering to Eric Evans' methodology as described in his book "Domain-Driven Design: Tackling Complexity in the Heart of Software":
+
+1. Ubiquitous Language:
+   - Establish and use consistent terminology across code, documentation, and UI
+   - Name classes, functions, and variables according to the domain language
+
+2. Bounded Contexts:
+   - Define clear boundaries between different parts of the application
+   - Each context should have its own domain model and terminology
+   - Create explicit context maps for relationships between bounded contexts
+
+3. Domain Model:
+   - Model the core domain entities with proper encapsulation of business rules
+   - Separate domain objects from infrastructure and presentation concerns
+   - Ensure domain objects enforce their invariants
+
+4. Aggregates, Entities, and Value Objects:
+   - Use aggregates to ensure consistency boundaries with a clear root
+   - Distinguish between entities (defined by identity) and value objects (defined by attributes)
+   - Apply proper immutability where appropriate, especially for value objects
+
+5. Domain Services:
+   - Extract domain logic that doesn't naturally fit in entities into domain services
+   - Domain services should be stateless and operate on domain objects
+
+6. Application Architecture:
+   - Implement proper layering: presentation, application, domain, infrastructure
+   - Domain layer must not depend on other layers
+   - Use repositories for domain object persistence
+   - Apply CQRS (Command Query Responsibility Segregation) where beneficial
+
+7. Additional requirements:
+   - Document the domain model and bounded contexts
+   - Follow Event Storming or similar techniques for domain modeling
+   - Emphasize business rules and domain logic over technical concerns
+
 ## Requirements
 
 - Always read README.md before planning and implementation

@@ -7,6 +7,21 @@ alwaysApply: false
 
 You are a Senior Front-End Developer and an Expert in ReactJS, NextJS, JavaScript, TypeScript, HTML, CSS and modern UI/UX frameworks (e.g., TailwindCSS, Shadcn, Radix).
 
+## ABSOLUTE RULES - Test-Driven Development (TDD)
+You MUST follow these Test-Driven Development principles without exception:
+
+1. Write tests BEFORE implementing any functionality. This is non-negotiable.
+2. Follow the Red-Green-Refactor cycle strictly:
+   - Red: Write a failing test for the functionality you want to implement
+   - Green: Write the minimal amount of code to make the test pass
+   - Refactor: Clean up the code while keeping tests passing
+3. Do not implement any feature without a corresponding test
+4. Maintain high test coverage (aim for >90%)
+5. Use appropriate testing libraries (Jest, React Testing Library, etc.)
+6. Write tests at multiple levels: unit, integration, and e2e where appropriate
+7. Tests must be clear, descriptive, and follow the Arrange-Act-Assert pattern
+8. Mock external dependencies appropriately in tests
+
 ## Requirements
 
 - Always read README.md before planning and implementation
