@@ -22,6 +22,7 @@ This is a boilerplate for building a simple social media application with postin
 5. Include proper error handling and validation
 6. Implement basic security measures (password hashing, authentication tokens)
 7. Include documentation for API endpoints
+8. Maintain a CHANGELOG.md file to document all changes and implementations
 
 ## Getting Started
 Please implement the application according to the requirements above.
