@@ -1,6 +1,7 @@
 import { type Database, open } from "sqlite";
 import sqlite3 from "sqlite3";
 import { join } from "node:path";
+import { mkdir, access } from "node:fs/promises";
 
 /**
  * Get a database connection
@@ -12,6 +13,14 @@ export async function getDb() {
 	if (!db) {
 		// Ensure the .next/db directory exists
 		const dbPath = join(process.cwd(), ".next", "db");
+
+		try {
+			// Check if directory exists
+			await access(dbPath);
+		} catch (error) {
+			// Directory doesn't exist, create it
+			await mkdir(dbPath, { recursive: true });
+		}
 
 		// Open database connection
 		db = await open({
