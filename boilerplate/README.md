@@ -11,6 +11,8 @@ This is a boilerplate for building a simple social media application with postin
 4. Timeline/feed to display posts from all users
 5. Ability to like and comment on posts
 6. Simple user search functionality
+7. Follow/unfollow functionality
+8. Pagination for the timeline/feed
 
 ### Technical Requirements
 1. Use React for the frontend
@@ -21,23 +23,5 @@ This is a boilerplate for building a simple social media application with postin
 6. Implement basic security measures (password hashing, authentication tokens)
 7. Include documentation for API endpoints
 
-### Optional Features (if time permits)
-1. Follow/unfollow functionality
-2. Notifications for likes, comments, and follows
-3. Image uploads for posts and profile pictures
-4. Pagination for the timeline/feed
-5. Real-time updates using WebSockets
-
-## Project Structure
-The application should be organized with a clear separation between frontend and backend code.
-
-## Evaluation Criteria
-Your implementation will be evaluated based on:
-1. Code quality and organization
-2. Functionality completeness
-3. Security implementation
-4. User experience
-5. Documentation quality
-
 ## Getting Started
-Please implement the application according to the requirements above. Make sure to include instructions for setting up and running the application. 
+Please implement the application according to the requirements above.
