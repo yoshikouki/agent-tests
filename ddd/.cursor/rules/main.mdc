@@ -49,5 +49,6 @@ You MUST follow these Domain-Driven Design principles without exception, strictl
 - Always read README.md before planning and implementation
 - Fulfill all requirements specified in README.md
 - Document changes in CHANGELOG.md and commit them
+- Note: `npx shadcn@latest add -a` has already been executed and doesn't need to be run again. If you need to add specific components, use `npx shadcn@latest add {component} --yes` to ignore warnings.
 
 @file:README.md

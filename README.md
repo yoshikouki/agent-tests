@@ -41,6 +41,7 @@ Each implementation follows the same core requirements:
 ### Technical Requirements
 1. Next.js 15 with React 19
 2. TailwindCSS 4 and shadcn/ui for styling
+   - Note: `npx shadcn@latest add -a` has already been executed and doesn't need to be run again. If you need to add specific components, use `npx shadcn@latest add {component} --yes` to ignore warnings.
 3. SQLite for the database
 4. Proper API routes for data handling
 5. Error handling and validation

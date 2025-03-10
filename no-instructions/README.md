@@ -17,6 +17,7 @@ This is a boilerplate for building a simple social media application with postin
 ### Technical Requirements
 1. Use Next.js 15 with React 19 for a monolithic application
 2. Use TailwindCSS 4 and shadcn/ui for styling
+   - Note: `npx shadcn@latest add -a` has already been executed and doesn't need to be run again. If you need to add specific components, use `npx shadcn@latest add {component} --yes` to ignore warnings.
 3. Use SQLite for the database
 4. Implement proper API routes for data handling
 5. Include proper error handling and validation
